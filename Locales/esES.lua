@@ -1,4 +1,4 @@
-local L = LibStub("AceLocale-3.0"):NewLocale("WhisperUnfriendly", "esES")
+local L = LibStub("AceLocale-3.0"):NewLocale("WhisperUnfriendly", "esES") or LibStub("AceLocale-3.0"):NewLocale("WhisperUnfriendly", "esMX")
 
 if not L then return end
 
