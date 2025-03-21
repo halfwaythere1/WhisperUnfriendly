@@ -115,6 +115,9 @@ function WhisperUnfriendly:UnitPopup_ShowMenu(dropdownMenu, which, unit, name, u
     -- Skip if the frame type isn't supported
     if not frameTypes[which] then return end
 
+    -- Skip the friends list context entirely (let AFriend handle it)
+    if which == "FRIEND" then return end
+
     -- Skip if the target is the player themselves
     if UnitGUID(unit) == UnitGUID("player") then return end
 
